@@ -1,1 +1,7 @@
 *.pyc
+
+# IDE setting files
+.idea
+
+# Database
+db.sqlite3
