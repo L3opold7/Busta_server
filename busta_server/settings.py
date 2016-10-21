@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'common',
-    'snippets',
+    'rest_framework_swagger',
+    'common.apps.CommonConfig',
+    'post.apps.PostConfig',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -124,3 +125,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'common.UserProfile'
+
+APPEND_SLASH = True
